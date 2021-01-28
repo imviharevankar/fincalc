@@ -1,0 +1,76 @@
+
+.sipCalc {
+    grid-area: input;
+    margin: 1rem auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 290px 290px;
+    grid-template-areas:
+      "input result"
+      "input chart" ;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;}
+
+.sipCalc__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input[type=number] {
+  outline: none;
+  border: 2px solid whitesmoke;
+  box-shadow: 1px 1px 1px whitesmoke;
+  height: 40px !important;
+  width: 80%;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 25px 10%;
+}
+
+
+input[type=submit] {
+  width: 40%;
+  background-color: #007AFF;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px #007AFF;
+}
+
+input[type=number]:active {
+    outline: solid #007AFF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+output {
+    border: 1px solid black;
+    width: 80%;
+    height: 40px;
+}
+
+@media only screen and (max-width: 980px) {
+    .sipCalc {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "input"
+        "result"
+        "chart";
+    }
+  }
