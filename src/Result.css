@@ -1,7 +1,7 @@
 .result {
     grid-area: result;
     margin: 1rem;
-    /* box-shadow: 1px 1px 5px 1px whitesmoke; */
+    box-shadow: 1px 1px 5px 1px whitesmoke;
     display: flex;
     flex-direction: column;
     background-color: #007AFF;
